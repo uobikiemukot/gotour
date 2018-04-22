@@ -37,29 +37,29 @@ func Same(t1, t2 *tree.Tree) bool {
 	return true
 
 	/*
-	   for {
-	         v1, ok1 := <-ch1
-	               v2, ok2 := <-ch2
+	for {
+		v1, ok1 := <-ch1
+		v2, ok2 := <-ch2
 
-	                     if v1 != v2 {
-	                             return false
-	                                   }
-	                                         if ok1 == false && ok2 == false {
-	                                                 break
-	                                                       }
-	                                                           }
-	                                                               return true
+		if v1 != v2 {
+			return false
+		}
+		if ok1 == false && ok2 == false {
+			break
+		}
+	}
+		return true
 	*/
 }
 
 func main() {
 	/*
-	   ch := make(chan int)
-	       t := tree.New(1)
-	           go Walk(t, ch)
-	               for i := 0; i < 10; i++ {
-	                     fmt.Println(<-ch)
-	                         }
+	ch := make(chan int)
+	t := tree.New(1)
+	go Walk(t, ch)
+	for i := 0; i < 10; i++ {
+		fmt.Println(<-ch)
+	}
 	*/
 	fmt.Println(Same(tree.New(1), tree.New(2)))
 }

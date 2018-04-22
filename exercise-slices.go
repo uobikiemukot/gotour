@@ -12,11 +12,11 @@ func Pic(dx, dy int) (s [][]uint8) {
 			var value int
 			//value := (x + y) / 2
 			/*
-			   if (x + y) % 2 == 0 {
-			           value = 0
-			                 } else {
-			                         value = 255
-			                               }
+			if (x+y)%2 == 0 {
+				value = 0
+			} else {
+				value = 255
+			}
 			*/
 			//value = (x * y)
 			value = x ^ y
